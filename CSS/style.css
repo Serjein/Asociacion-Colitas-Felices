@@ -144,6 +144,89 @@ h1 {
   background-color: #ff914d;
 }
 
+/* inicia sección de voluntarios */
+
+/* Dog of the Week section */
+.dog-of-the-week {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 20px;
+  }
+  
+  .dog-of-the-week-container {
+  width: 60%;
+  }
+  
+  .dog-of-the-week h2, .volunteer h2 {
+  text-align: center;
+  }
+  
+  .dog-of-the-week-card {
+  display: flex;
+  margin-top: 30px;
+  }
+  
+  .dog-of-the-week-card img {
+  width: 50%;
+  object-fit: cover;
+  }
+  
+  .dog-of-the-week-info {
+  padding: 20px;
+  width: 50%;
+  background-color: #f5f5f5;
+  }
+  
+  .dog-of-the-week-info h3 {
+  margin-top: 0;
+  }
+  
+  .dog-of-the-week-info p {
+  font-style: italic;
+  margin-top: 20px;
+  }
+  
+  .dog-of-the-week-button, .volunteer-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #ff5900;
+  color: #fff;
+  font-size: 18px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
+  }
+  
+  .dog-of-the-week-button:hover, .volunteer-button:hover {
+  background-color: #ff8c5a;
+  }
+  
+  .volunteer {
+  width: 35%;
+  }
+  
+  /* Volunteer section */
+  .volunteer {
+  background-color: #fff;
+  padding: 60px 0;
+  }
+  
+  .volunteer h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  }
+  
+  .volunteer p {
+  font-size: 18px;
+  margin-bottom: 20px;
+  }
+  
+  .volunteer a {
+  display: inline-block;
+  padding: 10
+  }
 
 
 
