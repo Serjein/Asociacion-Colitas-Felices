@@ -79,46 +79,35 @@ h1 {
   position: relative;
 }
 
-.container-image {
-  display: flex;
-  width: 400%;
-  animation: carousel 20s infinite;
+.carousel-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
 }
 
-.carousel-image {
-  flex-shrink: 0;
-  width: 25%;
+.carousel-image:first-child {
+  opacity: 1;
 }
 
 @keyframes carousel {
   0% {
-    transform: translateX(0);
-  }
-  20% {
-    transform: translateX(0);
+    opacity: 0;
   }
   25% {
-    transform: translateX(-25%);
-  }
-  45% {
-    transform: translateX(-25%);
-  }
-  50% {
-    transform: translateX(-50%);
-  }
-  70% {
-    transform: translateX(-50%);
+    opacity: 1;
   }
   75% {
-    transform: translateX(-75%);
-  }
-  95% {
-    transform: translateX(-75%);
+    opacity: 1;
   }
   100% {
-    transform: translateX(0);
+    opacity: 0;
   }
 }
+
 
 
 
