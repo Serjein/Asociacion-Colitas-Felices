@@ -71,11 +71,23 @@ h1 {
   /* inicia main */
 
 /* inicia carousel  */
+
+.carousel-and-donation-section {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* .slider {
+  flex: 1;
+  margin-right: 20px;
+} */
   
 .slider{
   width: 50%;
   height: 400px;
   overflow: hidden;
+  margin-left: 50px;
+  margin-right: 50px;
 }
 .slider ul{
   display: flex;
@@ -100,6 +112,44 @@ h1 {
   75%{margin-left: -300%;} 
   100%{margin-left: -300%;} 
 }
+
+/* inicia parte del donativo */
+
+.donation-section {
+  flex: 0 0 400px;
+  /* background-color: #f2f2f2;
+  padding: 20px; */
+  text-align: center;
+}
+
+.donation-section-title {
+  font-size: 50px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.donation-section-description {
+  font-size: 20px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.donation-button {
+  display: inline-block;
+  padding: 40px 50px;
+  background-color: #ff5900;
+  color: #fff;
+  font-size: 30px;
+  text-decoration: none;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+}
+
+
+.donation-button:hover {
+  background-color: #ff914d;
+}
+
 
 
 
