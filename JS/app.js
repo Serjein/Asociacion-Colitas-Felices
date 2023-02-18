@@ -1,25 +1,24 @@
-const carouselSlide = document.querySelector(".carousel-slide");
-const carouselImages = document.querySelectorAll(".carousel-slide img");
+const carouselContainer = document.querySelector(".carousel-container");
+const carouselImages = document.querySelectorAll(".carousel-container img");
 
-// Contador
-let counter = 1;
-const size = carouselImages[0].clientWidth;
+let counter = 0;
+const imageWidth = carouselImages[0].clientWidth;
 
-carouselSlide.style.transform = "translateX(" + (-size * counter) + "px)";
-
-// Loop del carrusel
-carouselSlide.addEventListener("transitionend", () => {
-  if (carouselImages[counter].id === "lastClone") {
-    carouselSlide.style.transition = "none";
-    counter = carouselImages.length - 2;
-    carouselSlide.style.transform = "translateX(" + (-size * counter) + "px)";
+setInterval(() => {
+  counter++;
+  carouselContainer.style.transform = "translateX(" + (-imageWidth * counter) + "px)";
+  if (counter === carouselImages.length - 1) {
+    setTimeout(() => {
+      counter = 0;
+      carouselContainer.style.transition = "none";
+      carouselContainer.style.transform = "translateX(0px)";
+      setTimeout(() => {
+        carouselContainer.style.transition = "transform 1s ease";
+      }, 100);
+    }, 1000);
   }
-  if (carouselImages[counter].id === "firstClone") {
-    carouselSlide.style.transition = "none";
-    counter = carouselImages.length - counter;
-    carouselSlide.style.transform = "translateX(" + (-size * counter) + "px)";
-  }
-});
+}, 3000);
+
 
 
 
