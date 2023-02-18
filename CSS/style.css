@@ -73,9 +73,8 @@ h1 {
 /* inicia carousel  */
   
 .carousel-container {
-  width: 100%;
-  margin: 0;
-  padding: 0;
+  width: 50%; /* ajusta el ancho del carousel */
+  height: 300px;
   overflow: hidden;
   display: flex;
   justify-content: flex-start;
@@ -86,24 +85,10 @@ h1 {
   padding: 0;
 }
 
-.carousel-slide {
-  display: flex;
-  width: 200%;
-  animation: slide 5s infinite linear;
-}
-
 .carousel-image {
-  width: 50%;
-  height: auto;
-}
-
-@keyframes slide {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-50%);
-  }
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 
