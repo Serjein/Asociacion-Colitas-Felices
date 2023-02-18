@@ -1,0 +1,106 @@
+*{margin: 0;
+padding: 0;
+box-sizing: border-box;}
+
+.contenido{
+    min-height: 100vh;
+}
+
+/* inicia header */
+header {
+  background: linear-gradient(180deg, #007991, #63d1b0);
+  max-width: 100%;
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.header-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border-bottom: 1px solid #63d1b0;
+}
+
+.logo-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.img-logo {
+  max-width: 100%;
+  height: auto;
+  width: 15%;
+}
+
+h1 {
+  font-size: 30px;
+  margin-left: 10px;
+  margin-top: 0;
+  color: white;
+}
+
+.main-menu {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.main-menu li {
+  text-align: center;
+  margin-right: 15px;
+  white-space: nowrap;
+}
+
+.main-menu a {
+  text-decoration: none;
+  color: #e6e6e6;
+  }
+
+  .main-menu a:hover {
+    text-decoration: underline;
+  }
+
+  .main-menu a:active {
+    color: red;
+  }
+
+  /* inicia main */
+
+/* inicia carousel  */
+  
+.carousel-container {
+  width: 50%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.carousel-slide {
+  display: flex;
+  width: 200%;
+  animation: slide 5s infinite linear;
+}
+
+.carousel-image {
+  width: 50%;
+  height: auto;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+
+  
+
+ /* inicia quienes somos  */
+
+ 
