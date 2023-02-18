@@ -73,16 +73,24 @@ h1 {
 /* inicia carousel  */
   
 .carousel-container {
-  width: 50%;
-  margin: 0 auto;
+  width: 100%;
+  margin: 0;
+  padding: 0;
   overflow: hidden;
+  display: flex;
+  justify-content: flex-start;
 }
 
-/* .carousel-slide {
+.slick-list {
+  margin: 0;
+  padding: 0;
+}
+
+.carousel-slide {
   display: flex;
   width: 200%;
   animation: slide 5s infinite linear;
-} */
+}
 
 .carousel-image {
   width: 50%;
