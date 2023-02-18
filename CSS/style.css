@@ -147,86 +147,71 @@ h1 {
 /* inicia sección de voluntarios */
 
 /* Dog of the Week section */
-.dog-of-the-week {
+.dog-volunteer-section {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.dog-week-volunteer-container {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
-  margin-top: 20px;
-  }
-  
-  .dog-of-the-week-container {
-  width: 60%;
-  }
-  
-  .dog-of-the-week h2, .volunteer h2 {
-  text-align: center;
-  }
-  
-  .dog-of-the-week-card {
-  display: flex;
-  margin-top: 30px;
-  }
-  
-  .dog-of-the-week-card img {
-  width: 50%;
-  object-fit: cover;
-  }
-  
-  .dog-of-the-week-info {
+  align-items: center;
+  flex-wrap: wrap;
+  width: 80%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
   padding: 20px;
-  width: 50%;
-  background-color: #f5f5f5;
-  }
-  
-  .dog-of-the-week-info h3 {
-  margin-top: 0;
-  }
-  
-  .dog-of-the-week-info p {
-  font-style: italic;
-  margin-top: 20px;
-  }
-  
-  .dog-of-the-week-button, .volunteer-button {
+}
+
+.dog-of-the-week-card {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  width: 100%;
+  max-width: 600px;
+}
+
+.volunteer-container {
+  width: 100%;
+  max-width: 600px;
+  margin-top: 30px;
+}
+
+.volunteer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.volunteer h2, .volunteer p, .volunteer a {
+  margin: 0;
+}
+
+.volunteer p {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.volunteer-button {
   display: inline-block;
   padding: 10px 20px;
-  background-color: #ff5900;
-  color: #fff;
-  font-size: 18px;
-  text-decoration: none;
+  border: 2px solid #a47a3b;
   border-radius: 5px;
+  background-color: #f8d58c;
+  color: #2d2d2d;
+  text-decoration: none;
+  font-weight: bold;
   transition: background-color 0.3s ease;
-  margin-top: 20px;
-  }
-  
-  .dog-of-the-week-button:hover, .volunteer-button:hover {
-  background-color: #ff8c5a;
-  }
-  
-  .volunteer {
-  width: 35%;
-  }
-  
-  /* Volunteer section */
-  .volunteer {
-  background-color: #fff;
-  padding: 60px 0;
-  }
-  
-  .volunteer h2 {
-  font-size: 36px;
-  margin-bottom: 20px;
-  }
-  
-  .volunteer p {
-  font-size: 18px;
-  margin-bottom: 20px;
-  }
-  
-  .volunteer a {
-  display: inline-block;
-  padding: 10
-  }
+}
+
+.volunteer-button:hover {
+  background-color: #a47a3b;
+  color: #f8d58c;
+}
+
 
 
 
